@@ -6,9 +6,7 @@ const userRouter = require('./routers/user')
 const app = express()
 const port = process.env.PORT
 
-app.use(cors({
-    origin: 'https://dual-lab-test-eleonora.herokuapp.com'
-}))
+app.use(cors())
 app.use(express.json())
 app.use(userRouter)
 
