@@ -7,7 +7,7 @@ const app = express()
 const port = process.env.PORT
 
 app.use(cors({
-    origin: '*'
+    origin: 'https://dual-lab-test-eleonora.herokuapp.com'
 }))
 app.use(express.json())
 app.use(userRouter)
