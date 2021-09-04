@@ -10,7 +10,7 @@ const auth = async function (req, res, next) {
             throw new Error()
         }
         // new token is generated, so new 30 minutes can start again
-        // await user.generateToken()
+        await user.generateToken()
         req.user = user
         next()
     } catch (error) {
